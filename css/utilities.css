@@ -1,0 +1,152 @@
+/* Text Primary */
+.text-primary {
+  color: #0284d0;
+}
+.text-secondary {
+  color: #027ed0;
+}
+/* Button */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #027ed0;
+  border: none;
+  border-radius: 5px;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.bg-light,
+.btn-light {
+  background: #f4f4f4;
+  color: #333;
+}
+.bg-secondary {
+  background: linear-gradient(255deg, #784ba0 0%, 1%, #0b3652 18%);
+  color: #fff;
+}
+.btn-dark,
+.bg-dark {
+  background: linear-gradient(to bottom, #232526, #414345);
+  color: #fff;
+}
+.bg-primary {
+  background: linear-gradient(315deg, #8bc6ec 0%, #080e60 100%);
+  color: #fff;
+}
+.btn-outline {
+  background: #027ed0;
+}
+/* Flex Items */
+.flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+}
+.flex-items > div {
+  padding: 20px;
+}
+
+/* Flex columns */
+.flex-columns.flex-reverse .row {
+  flex-direction: row-reverse;
+}
+.flex-columns .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+  height: 100%;
+}
+.flex-columns img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.flex-columns .column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.flex-columns h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.flex-columns h4 {
+  margin-bottom: 10px;
+}
+.flex-columns p {
+  margin: 20px 0;
+}
+
+/* Section Header */
+.section-header {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.section-header h2 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.section-padding {
+  padding: 20px 20px 40px;
+}
+
+/* Flex-grid */
+.flex-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.flex-grid .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+/* Clients */
+.client {
+  margin-top: 50px;
+}
+.client-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.client-item {
+  flex: 1 1 150px;
+  max-width: 200px;
+  padding: 10px;
+}
+.client-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  filter: grayscale(100);
+  transition: all 0.4s ease-in-out;
+}
+.client-item img:hover {
+  filter: none;
+  transform: scale(1.15);
+}
